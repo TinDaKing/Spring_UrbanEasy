@@ -5,5 +5,6 @@ public interface OverviewInterface {
     int getTotalUser();
     int getTotalBooking();
     int getTotalReview();
+    int getTotalProperty();
 
 }

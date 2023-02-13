@@ -1,12 +1,10 @@
 package com.example.demospring.model;
 
-import com.example.demospring.entity.Property;
-
-public class PropertyRequestPayload {
-    private Property key;
+public class RequestPayload<T> {
+    private T key;
     private String action;
 
-    public PropertyRequestPayload(Property key, String action) {
+    public RequestPayload(T key, String action) {
         this.key = key;
         this.action = action;
     }
@@ -19,11 +17,11 @@ public class PropertyRequestPayload {
                 '}';
     }
 
-    public Property getKey() {
+    public T getKey() {
         return key;
     }
 
-    public void setKey(Property key) {
+    public void setKey(T key) {
         this.key = key;
     }
 

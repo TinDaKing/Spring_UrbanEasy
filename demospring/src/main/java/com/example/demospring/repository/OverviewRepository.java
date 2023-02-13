@@ -57,7 +57,7 @@ public interface OverviewRepository extends JpaRepository<Property,Long> {
     List<BookingStatisticInterface> selectBookingStatistic();
 
     @Query(
-            value="SELECT category_id as categoryId, c.name, COUNT(category_id)*100.0 / (SELECT COUNT(*) FROM Property) AS percentCategory\n" +
+            value="SELECT  c.name as x, COUNT(category_id)*100.0 / (SELECT COUNT(*) FROM Property) AS y, concat(COUNT(category_id)*100.0 / (SELECT COUNT(*) FROM Property),'%') as text \n" +
                     "FROM property join category c on category_id = c.id\n" +
                     "GROUP BY category_id\n" +
                     "order by category_id;",

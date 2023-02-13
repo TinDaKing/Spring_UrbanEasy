@@ -32,6 +32,10 @@ public class User {
     @Column(name="total_owned_property")
     private String totalOwnedProperty;
 
+    public User() {
+
+    }
+
     public Long getId() {
         return id;
     }
@@ -85,6 +89,23 @@ public class User {
     }
 
     public void setTotalOwnedProperty(String totalOwnedProperty) {
+        this.totalOwnedProperty = totalOwnedProperty;
+    }
+
+    public User(Long id, String userName, String password, String email) {
+        this.id = id;
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+    }
+
+    public User(Long id, String userName, String password, String email, String url, String dateCreated, String totalOwnedProperty) {
+        this.id = id;
+        this.userName = userName;
+        this.password = password;
+        this.email = email;
+        this.url = url;
+        this.dateCreated = dateCreated;
         this.totalOwnedProperty = totalOwnedProperty;
     }
 }

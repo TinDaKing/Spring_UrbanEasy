@@ -1,7 +1,7 @@
 package com.example.demospring.model;
 
 public interface CategoryStatisticInterface {
-    int getCategoryId();
-    String getName();
-    double getPercentCategory();
+    String getX();
+    double getY();
+    String getText();
 }

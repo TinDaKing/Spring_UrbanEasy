@@ -1,23 +1,21 @@
 package com.example.demospring.model;
 
-import com.example.demospring.entity.Property;
-
 import java.util.List;
 
 
-public class PropertyPayload {
-    private List<Property> result;
+public class Payload<T> {
+    private List<T> result;
     private int count;
-    public PropertyPayload(List<Property> result, int count) {
+    public Payload(List<T> result, int count) {
         this.result = result;
         this.count = count;
     }
 
-    public List<Property> getResult() {
+    public List<T> getResult() {
         return result;
     }
 
-    public void setResult(List<Property> result) {
+    public void setResult(List<T> result) {
         this.result = result;
     }
 
