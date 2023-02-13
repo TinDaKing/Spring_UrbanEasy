@@ -1,10 +1,10 @@
 package com.example.demospring.repository;
 
 import com.example.demospring.entity.Property;
+import com.example.demospring.entity.User;
 import com.example.demospring.model.BookingStatisticInterface;
 import com.example.demospring.model.CategoryStatisticInterface;
 import com.example.demospring.model.OverviewInterface;
-import com.example.demospring.model.UserInterface;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

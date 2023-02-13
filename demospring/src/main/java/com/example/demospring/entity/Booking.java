@@ -3,13 +3,15 @@ package com.example.demospring.entity;
 import jakarta.persistence.*;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "property_id")
+    @Column (name = "property_id")
     private long propertyId;
     @Column (name = "user_id")
     private long userId;

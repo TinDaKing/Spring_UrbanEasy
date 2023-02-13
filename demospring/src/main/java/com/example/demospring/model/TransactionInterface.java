@@ -6,4 +6,5 @@ public interface TransactionInterface {
     String getUserName();
     String getPrice();
     String getDateBooked();
+    String getProductImage();
 }
