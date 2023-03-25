@@ -1,2 +1,2 @@
 # Spring_UrbanEasy
-Me and Tai Ha are building admin page using Spring for UrbanEasy project
+Me and Tai Ha are building administration system using Spring for UrbanEasy project
